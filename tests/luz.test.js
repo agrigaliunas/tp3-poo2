@@ -7,6 +7,7 @@ test("Luz encendida", () => {
 
 test("Luz apagada", () => {
     var luz = new Luz();
+    luz.cambiarEstado();
     expect(luz.estado).toBe("Apagada");
   });
   
