@@ -1,3 +1,6 @@
+const LuzApagada = require('./LuzApagada');
+const LuzEncendida = require('./LuzEncendida');
+
 function Luz() {
   this.estadoActual = new LuzApagada();
 
