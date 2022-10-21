@@ -1,9 +1,13 @@
-
-function Luz(){
-    this.estado="Encendida";
-    this.cambiarEstado= function() {
-        this.estado="Apagada"
+function Luz() {
+  this.estado = "Apagada";
+  this.cambiarEstado = function () {
+    if (this.estado == "Apagada"){
+        this.estado="Encendida"
     }
+    else{
+        this.estado = "Apagada";
+    }
+  };
 }
 
-module.exports=Luz;
+module.exports = Luz;
