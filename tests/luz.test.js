@@ -1,3 +1,5 @@
+const Luz = require("./src/Luz.js")
+
 test('Luz encendida', ()=>{
-    expect(luz.estado).toBe("Encendida")
+    expect(Luz.estado).toBe("Encendida")
 })
