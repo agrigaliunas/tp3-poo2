@@ -1,5 +1,6 @@
 function Luz() {
   this.estado = "Apagada";
+  
   this.cambiarEstado = function () {
     if (this.estado == "Apagada"){
         this.estado="Encendida"
