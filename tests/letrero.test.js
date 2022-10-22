@@ -1,4 +1,5 @@
 const Letrero = require("../src/Letrero.js");
+const Posicion=require('../src/Posicion.js')
 
 test("Letrero [x,y] encendido", () => {
   const letrero = new Letrero();
