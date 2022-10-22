@@ -5,4 +5,10 @@ test("Letrero encendido", () => {
     expect(letrero.estado).toBe("Encendido");
 });
 
+
+test("Letrero apagado", () => {
+    const letrero=new Letrero();
+    expect(letrero.estado).toBe("Apagado");
+});
+
 // hacer refactor
