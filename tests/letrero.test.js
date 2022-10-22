@@ -7,7 +7,7 @@ test("Letrero [1,2] encendido", () => {
 
 test("Letrero [1,2] apagado", () => {
   const letrero = new Letrero();
-  expect(letrero.estado(1,2)).toBe("Apagado");
+  expect(letrero.estado(1,2)).toBe("Apagada");
 });
 
 // hacer refactor
