@@ -21,7 +21,7 @@ function Letrero() {
   };
 
   this.cambiarEstado = function (x, y) {
-    this.luces[x][y].cambiarEstado;
+    this.luces[x][y].cambiarEstado();
   };
 }
 
