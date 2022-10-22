@@ -1,14 +1,15 @@
 const Letrero = require("../src/Letrero.js");
 
-test("Letrero [1,2] encendido", () => {
+test("Letrero [x,y] encendido", () => {
   const letrero = new Letrero();
-  letrero.cambiarEstado(1,2);
-  expect(letrero.estado(1,2)).toBe("Encendida");
+  const posicion = new Posicion();
+  letrero.cambiarEstado(posicion);
+  expect(letrero.estado(posicion)).toBe("Encendida");
 });
 
-test("Letrero [1,2] apagado", () => {
+test("Letrero [x,y] apagado", () => {
   const letrero = new Letrero();
-  expect(letrero.estado(1,2)).toBe("Apagada");
+  const posicion = new Posicion();
+  expect(letrero.estado(posicion)).toBe("Apagada");
 });
 
-// hacer refactor
