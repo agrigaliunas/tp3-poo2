@@ -16,12 +16,12 @@ function Letrero() {
     this.luces[i] = aux;
   }
 
-  this.estado = function (x, y) {
-    return this.luces[x][y].estadoActual.estado;
+  this.estado = function (posicion) {
+    return this.luces[posicion.x][posicion.y].estadoActual.estado;
   };
 
-  this.cambiarEstado = function (x, y) {
-    this.luces[x][y].cambiarEstado();
+  this.cambiarEstado = function (posicion) {
+    this.luces[posicion.x][posicion.y].cambiarEstado();
   };
 }
 
