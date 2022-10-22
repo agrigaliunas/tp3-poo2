@@ -1,7 +1,8 @@
-const Letrero= require('./Letrero.js')
+const Letrero= require('../src/Letrero.js')
 
 test("Letrero encendido", () => {
-  expect(letretro.estado).toBe("Encendido");
+    const letrero=new Letrero();
+    expect(letretro.estado).toBe("Encendido");
 });
 
 // hacer refactor
