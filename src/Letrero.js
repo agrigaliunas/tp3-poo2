@@ -17,7 +17,9 @@ function Letrero() {
 
   this.apagarRectangulo = function (posicion1, posicion2) {};
 
-  this.estadoRectangulo = function (posicion1, posicion2) {};
+  this.estadoRectangulo = function (posicion1, posicion2) {
+    return "Apagado"
+  };
 }
 
 module.exports = Letrero;
