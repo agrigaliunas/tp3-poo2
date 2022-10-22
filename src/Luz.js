@@ -12,7 +12,9 @@ function Luz() {
     this.estadoActual= new LuzEncendida();
   }
 
-  
+  this.apagar= function() {
+    this.estadoActual= new LuzApagada();
+  }
 }
 
 module.exports = Luz;
