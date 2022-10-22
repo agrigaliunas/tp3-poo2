@@ -1,8 +1,10 @@
+const LuzEncendida = require("./LuzEncendida.js");
 
 function LuzApagada() {
-    this.cambiarEstado=function(){
-        return new LuzEncendida();
-    }
+  this.estado = "Apagada";
+  this.cambiarEstado = function () {
+    return new LuzEncendida();
+  };
 }
 
-module.exports=LuzApagada;
+module.exports = LuzApagada;

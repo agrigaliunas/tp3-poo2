@@ -3,12 +3,12 @@ const Luz = require("../src/Luz.js");
 test("Luz encendida", () => {
   var luz = new Luz();
   luz.cambiarEstado();
-  expect(luz.estado).toBe("Encendida");
+  expect(luz.estadoActual.estado).toBe("Encendida");
 });
 
 test("Luz apagada", () => {
     var luz = new Luz();
-    expect(luz.estado).toBe("Apagada");
+    expect(luz.estadoActual.estado).toBe("Apagada");
 });
 
 
