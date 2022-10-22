@@ -2,7 +2,7 @@ const Letrero = require("../src/Letrero.js");
 
 test("Letrero [1,2] encendido", () => {
   const letrero = new Letrero();
-  
+  letrero.cambiarEstado(1,2);
   expect(letrero.estado(1,2)).toBe("Encendida");
 });
 

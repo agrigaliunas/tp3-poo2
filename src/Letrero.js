@@ -20,7 +20,7 @@ function Letrero() {
     return this.luces[x][y].estadoActual.estado;
   };
 
-  
+
 
 }
 
