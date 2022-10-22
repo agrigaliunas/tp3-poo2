@@ -11,6 +11,8 @@ function Luz() {
   this.encender= function() {
     this.estadoActual= new LuzEncendida();
   }
+
+  
 }
 
 module.exports = Luz;
