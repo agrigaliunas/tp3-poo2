@@ -1,6 +1,6 @@
-function Posicion(){
-    this.x=0;
-    this.y=0;
+function Posicion(X, Y) {
+  this.x = X;
+  this.y = Y;
 }
 
 module.exports = Posicion;
