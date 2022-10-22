@@ -20,10 +20,9 @@ function Letrero() {
     return this.luces[x][y].estadoActual.estado;
   };
 
-  this.cambiarEstado= function(){
-    
-  }
-
+  this.cambiarEstado = function (x, y) {
+    this.luces[x][y].cambiarEstado;
+  };
 }
 
 module.exports = Letrero;
