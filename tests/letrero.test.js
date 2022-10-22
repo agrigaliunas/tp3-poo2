@@ -1,9 +1,12 @@
 const Letrero = require("../src/Letrero.js");
 const Posicion=require('../src/Posicion.js')
 
+var letrero;
+var posicion;
+
 beforeEach(()=> {
-    const letrero = new Letrero();
-    const posicion = new Posicion(1,2);
+    letrero = new Letrero();
+    posicion = new Posicion(1,2);
 });
 
 
