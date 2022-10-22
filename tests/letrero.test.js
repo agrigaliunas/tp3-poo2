@@ -7,6 +7,7 @@ test("Letrero encendido", () => {
 
 test("Letrero apagado", () => {
   const letrero = new Letrero();
+  letrero.cambiarEstado(1,2);
   expect(letrero.estado(1,2)).toBe("Apagado");
 });
 
