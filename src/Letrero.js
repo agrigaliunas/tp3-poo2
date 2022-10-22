@@ -14,6 +14,11 @@ function Letrero() {
   this.cambiarEstado = function (posicion) {
     this.luces[posicion.x][posicion.y].cambiarEstado();
   };
+
+  this.apagarRectangulo= function(){
+    
+  }
+
 }
 
 module.exports = Letrero;
