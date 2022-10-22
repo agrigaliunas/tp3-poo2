@@ -15,10 +15,9 @@ function Letrero() {
     this.luces[posicion.x][posicion.y].cambiarEstado();
   };
 
-  this.apagarRectangulo= function(){
-    
-  }
+  this.apagarRectangulo = function (posicion1, posicion2) {};
 
+  this.estadoRectangulo = function (posicion1, posicion2) {};
 }
 
 module.exports = Letrero;
