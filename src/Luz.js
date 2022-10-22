@@ -7,6 +7,10 @@ function Luz() {
   this.cambiarEstado = function () {
     this.estadoActual = this.estadoActual.cambiarEstado();
   };
+
+  this.encender= function() {
+    this.estadoActual= new LuzEncendida();
+  }
 }
 
 module.exports = Luz;
