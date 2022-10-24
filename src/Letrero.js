@@ -68,6 +68,9 @@ function Letrero() {
     return 10000-this.cantidadApagadas();
   }
 
+  this.intensidad= function(posicion) {
+    return 1;
+  }
 }
 
 
