@@ -69,7 +69,7 @@ function Letrero() {
   };
 
   this.intensidad = function (posicion) {
-    return this.luces[posicion.x][posicion.y].estadoActual.intensidad;
+    return this.luces[posicion.x][posicion.y].estadoActual.intensidad.valorIntensidad;
   };
 }
 

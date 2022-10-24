@@ -1,6 +1,8 @@
+const Intensidad = require('../src/Intensidad.js');
+
 function LuzEncendida() {
   this.estado = "Encendida";
-  this.intensidad = 1;
+  this.intensidad = new Intensidad();
 }
 
 module.exports = LuzEncendida;
