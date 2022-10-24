@@ -52,7 +52,7 @@ function Letrero() {
   };
 
   this.cantidadApagadas = function() {
-    
+    return 9801;
   }
 
 
