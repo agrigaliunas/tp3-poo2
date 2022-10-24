@@ -64,8 +64,6 @@ function Letrero() {
     return cant;
   }
 
-
-
 }
 
 

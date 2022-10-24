@@ -37,3 +37,7 @@ test("Cuantas hay apagadas letrero", () =>{
     letrero.encenderRectangulo(posicion1,posicion2);
     expect(letrero.cantidadApagadas()).toBe(9991);
 })
+
+test("Cuantas hay encendidas letrero", () =>{
+    expect(letrero.cantidadEncendidas()).toBe(0);
+})
