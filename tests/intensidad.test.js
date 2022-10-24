@@ -13,6 +13,7 @@ beforeEach(()=> {
 });
 
 test("Intensidad al prender", () =>{
+    letrero.encenderRectangulo(posicion1,posicion1);
     expect(letrero.intensidad(posicion1)).toBe(1);
 })
 

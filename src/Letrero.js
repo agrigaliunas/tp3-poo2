@@ -18,10 +18,10 @@ function Letrero() {
 
   this.apagarRectangulo = function (posicion1, posicion2) {
     for (var i = posicion1.x; i <= posicion2.x; i++) {
-        for (var j = posicion1.y; j <= posicion2.y; j++) {
-          this.luces[i][j].apagar();
-        }
+      for (var j = posicion1.y; j <= posicion2.y; j++) {
+        this.luces[i][j].apagar();
       }
+    }
   };
 
   this.encenderRectangulo = function (posicion1, posicion2) {
@@ -32,13 +32,13 @@ function Letrero() {
     }
   };
 
-  this.alternar = function(posicion1, posicion2) {
+  this.alternar = function (posicion1, posicion2) {
     for (var i = posicion1.x; i <= posicion2.x; i++) {
       for (var j = posicion1.y; j <= posicion2.y; j++) {
         this.luces[i][j].cambiarEstado();
       }
     }
-  }
+  };
 
   this.estadoRectangulo = function (posicion1, posicion2) {
     var cond = "Encendido";
@@ -52,26 +52,25 @@ function Letrero() {
     return cond;
   };
 
-  this.cantidadApagadas = function() {
+  this.cantidadApagadas = function () {
     var cant = 10000;
     for (var i = 0; i <= 99; i++) {
       for (var j = 0; j <= 99; j++) {
-        if (this.luces[i][j].estadoActual.estado == "Encendida"){
+        if (this.luces[i][j].estadoActual.estado == "Encendida") {
           cant--;
-        };
+        }
       }
     }
     return cant;
-  }
+  };
 
-  this.cantidadEncendidas = function() {
-    return 10000-this.cantidadApagadas();
-  }
+  this.cantidadEncendidas = function () {
+    return 10000 - this.cantidadApagadas();
+  };
 
-  this.intensidad= function(posicion) {
+  this.intensidad = function (posicion) {
     return 1;
-  }
+  };
 }
-
 
 module.exports = Letrero;
