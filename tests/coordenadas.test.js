@@ -26,6 +26,6 @@ test("La seccion del tablero [0,0]-[2,2] debe estar encendido",() =>{
 })
 
 test("Alterna luces del rectangulo [0,0]-[2,2] de encendido a apagado", () =>{
-    letreto.alternar();
+    letrero.alternar();
     expect(letreto.estadoRectangulo(posicion1,posicion2)).toBe("Apagado");
 })
