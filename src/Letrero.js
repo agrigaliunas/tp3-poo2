@@ -31,7 +31,7 @@ function Letrero() {
     }
   };
 
-  this.alternar = function() {
+  this.alternar = function(posicion1, posicion2) {
     for (var i = posicion1.x; i <= posicion2.x; i++) {
       for (var j = posicion1.y; j <= posicion2.y; j++) {
         this.luces[i][j].cambiarEstado();
