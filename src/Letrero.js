@@ -32,7 +32,11 @@ function Letrero() {
   };
 
   this.alternar = function() {
-    
+    for (var i = posicion1.x; i <= posicion2.x; i++) {
+      for (var j = posicion1.y; j <= posicion2.y; j++) {
+        this.luces[i][j].cambiarEstado();
+      }
+    }
   }
 
   this.estadoRectangulo = function (posicion1, posicion2) {
