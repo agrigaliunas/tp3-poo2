@@ -31,6 +31,10 @@ function Letrero() {
     }
   };
 
+  this.alternar = function() {
+    
+  }
+
   this.estadoRectangulo = function (posicion1, posicion2) {
     var cond = "Encendido";
     for (var i = posicion1.x; i <= posicion2.x; i++) {
