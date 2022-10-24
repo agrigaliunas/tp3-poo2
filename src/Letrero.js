@@ -64,6 +64,10 @@ function Letrero() {
     return cant;
   }
 
+  this.cantidadEncendidas = function() {
+    
+  }
+
 }
 
 
