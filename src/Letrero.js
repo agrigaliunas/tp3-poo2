@@ -53,8 +53,8 @@ function Letrero() {
 
   this.cantidadApagadas = function() {
     var cant = 0;
-    for (var i = posicion1.x; i <= posicion2.x; i++) {
-      for (var j = posicion1.y; j <= posicion2.y; j++) {
+    for (var i = 0; i <=99; i++) {
+      for (var j = 0; j <= 99; j++) {
         if (this.luces[i][j].estadoActual.estado=="Apagada"){
           cant++;
         };
