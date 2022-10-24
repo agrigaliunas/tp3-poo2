@@ -52,7 +52,15 @@ function Letrero() {
   };
 
   this.cantidadApagadas = function() {
-    return 9801;
+    var cant = 0;
+    for (var i = posicion1.x; i <= posicion2.x; i++) {
+      for (var j = posicion1.y; j <= posicion2.y; j++) {
+        if (this.luces[i][j].estadoActual.estado=="Apagada"){
+          cant++;
+        };
+      }
+    }
+    return cant;
   }
 
 
