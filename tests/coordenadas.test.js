@@ -30,3 +30,10 @@ test("Alterna luces del rectangulo [0,0]-[2,2] de encendido a apagado", () =>{
     letrero.alternar(posicion1,posicion2);
     expect(letrero.estadoRectangulo(posicion1,posicion2)).toBe("Apagado");
 })
+
+
+// 99x99 = 9801
+
+test("Cuantas hay apagadas letrero", () =>{
+    expect(letrero.cantidadApagadas()).toBe(9801);
+})
