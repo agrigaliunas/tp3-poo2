@@ -10,3 +10,5 @@ function Intensidad() {
     this.valorIintensidad += 2;
   };
 }
+
+module.exports = Intensidad;
