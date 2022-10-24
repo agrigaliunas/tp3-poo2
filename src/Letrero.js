@@ -1,9 +1,10 @@
 const CrearLetrero = require("./CrearLetrero.js");
+const Posicion = require("../src/Posicion.js");
 
 function Letrero() {
   // posicion {x,y}
   // max 99x99
-  //this.luces = [[99 luces],[99 luces], 99 veces]
+  //this.luces = [ [99 luces],[99 luces], 99 veces]
 
   this.luces = CrearLetrero.crearLuces();
 
@@ -26,6 +27,7 @@ function Letrero() {
   this.encenderRectangulo = function (posicion1, posicion2) {
     for (var i = posicion1.x; i <= posicion2.x; i++) {
       for (var j = posicion1.y; j <= posicion2.y; j++) {
+        console.log(i+" "+j);
         this.luces[i][j].encender();
       }
     }
@@ -52,11 +54,11 @@ function Letrero() {
   };
 
   this.cantidadApagadas = function() {
-    var cant = 0;
-    for (var i = 0; i <=99; i++) {
+    var cant = 10000;
+    for (var i = 0; i <= 99; i++) {
       for (var j = 0; j <= 99; j++) {
-        if (this.luces[i][j].estadoActual.estado=="Apagada"){
-          cant++;
+        if (this.luces[i][j].estadoActual.estado == "Encendida"){
+          cant--;
         };
       }
     }
@@ -66,5 +68,6 @@ function Letrero() {
 
 
 }
+
 
 module.exports = Letrero;

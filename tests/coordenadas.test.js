@@ -34,6 +34,6 @@ test("Alterna luces del rectangulo [0,0]-[2,2] de encendido a apagado", () =>{
 
 // 10000 luces
 test("Cuantas hay apagadas letrero", () =>{
-    //letrero.encenderRectangulo(posicion1,posicion2);
-    expect(letrero.cantidadApagadas()).toBe(10000);
+    letrero.encenderRectangulo(posicion1,posicion2);
+    expect(letrero.cantidadApagadas()).toBe(9991);
 })

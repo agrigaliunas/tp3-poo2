@@ -3,17 +3,20 @@ const Luz = require("./Luz.js");
 const CrearLetrero = ( function () {
     
     function crearLuces() {
-        const aux = new Array(100);
-        const luces = new Array(100);
-        
-        for (let i = 0; i < 100; i++) {
-            aux[i] = new Luz();
-        }
-        
-        for (let i = 0; i < 100; i++) {
-            luces[i] = aux;
-        }
+        const luces = new Array(100);            
 
+        for (var i = 0; i < luces.length; i++) {
+            luces[i] = new Array(100);
+        }
+          
+        var h = 0;
+          
+        for (var i = 0; i <= 99; i++) {
+            for (var j = 0; j <= 99; j++) {
+                luces[i][j] = new Luz();
+            }
+        }
+                
         return luces;
     }
 
