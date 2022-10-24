@@ -14,3 +14,8 @@ test("Luz encendida", () => {
 test("Luz apagada", () => {
   expect(luz.estadoActual.estado).toBe("Apagada");
 });
+
+test("Encender luz", () => {
+  luz.encender();
+  expect(luz.estadoActual.estado).toBe("Encendida");
+});
