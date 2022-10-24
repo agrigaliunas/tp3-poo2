@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: Should run test with command npm run testpush\" && exit 1",
-    "testpush": "git add . && git commit -m \"TDD iteracion\" && git push origin master && jest"
+    "testpush": "git add . && git commit -m \"TDD iteracion\" && git push origin parte-2 && jest"
   },
   "repository": {
     "type": "git",
