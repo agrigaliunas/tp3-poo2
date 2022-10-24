@@ -50,6 +50,13 @@ function Letrero() {
     }
     return cond;
   };
+
+  this.cantidadApagadas = function() {
+    
+  }
+
+
+
 }
 
 module.exports = Letrero;
