@@ -16,11 +16,14 @@ test("Luz apagada", () => {
 });
 
 test("Encender luz", () => {
+
   luz.encender();
   expect(luz.estadoActual.estado).toBe("Encendida");
 });
 
 test("Apagar luz", () => {
+  luz.encender();
   luz.apagar();
   expect(luz.estadoActual.estado).toBe("Apagada");
 });
+
