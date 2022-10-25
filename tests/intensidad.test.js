@@ -50,9 +50,3 @@ test("Intensidad al CAMBIAR llegando a maxima", () => {
   expect(letrero.intensidad(posicion1)).toBe(10);
 });
 
-/*
-Encender (Turn on): Agregar una unidad de intensidad a las luces correspondientes.
-- Apagar (Turn off): Disminuir la intensidad en una unidad de las luces correspondientes.
-- Cambiar (Toggle): Agregar dos unidades de intensidad a las luces correspondientes.
-- Cuantas hay encendidas: Devuelve el total de luces encendidas del letrero
-*/
