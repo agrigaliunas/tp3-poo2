@@ -13,7 +13,7 @@ function Intensidad() {
   };
 
   this.condicion = function () {
-    return this.Intensidad < 10;
+    return this.valorIntensidad < 10;
   };
 }
 
