@@ -1,5 +1,5 @@
 function Intensidad() {
-  this.valorIntensidad = 0;
+  this.valorIntensidad = 1;
   this.encender = function () {
     this.valorIntensidad += 1;
   };
