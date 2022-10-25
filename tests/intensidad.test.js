@@ -22,6 +22,13 @@ test("Intensidad maxima", () => {
   expect(letrero.intensidad(posicion1)).toBe(10);
 });
 
+test("Intensidad al apagar", () => {
+  letrero.encenderRectangulo(posicion1, posicion1);
+
+  letrero.apagarRectangulo(posicion1, posicion1);
+  expect(letrero.intensidad(posicion1)).toBe(0);
+});
+
 /*
 Encender (Turn on): Agregar una unidad de intensidad a las luces correspondientes.
 - Apagar (Turn off): Disminuir la intensidad en una unidad de las luces correspondientes.
