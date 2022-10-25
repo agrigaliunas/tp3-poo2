@@ -14,7 +14,11 @@ function Luz() {
   };
 
   this.encender = function () {
-    this.estadoActual = new LuzEncendida();
+    if (this.estadoActual.estado=='Apagada'){
+      this.estadoActual = new LuzEncendida();
+    } else {
+      this.estadoActual.intensidad.encender();
+    }
   };
 
   this.apagar = function () {
