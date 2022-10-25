@@ -1,22 +1,26 @@
-
 const Letrero = require("../src/Letrero.js");
 const Posicion = require("../src/Posicion.js");
 
 var letrero;
 var posicion1;
 
-
-beforeEach(()=> {
-    letrero = new Letrero();
-    posicion1 = new Posicion(0,0);
-    
+beforeEach(() => {
+  letrero = new Letrero();
+  posicion1 = new Posicion(0, 0);
 });
 
-test("Intensidad al prender", () =>{
-    letrero.encenderRectangulo(posicion1,posicion1);
-    letrero.encenderRectangulo(posicion1,posicion1);
-    expect(letrero.intensidad(posicion1)).toBe(2);
-})
+test("Intensidad al encender dos veces", () => {
+  letrero.encenderRectangulo(posicion1, posicion1);
+  letrero.encenderRectangulo(posicion1, posicion1);
+  expect(letrero.intensidad(posicion1)).toBe(2);
+});
+
+test("Intensidad maxima", () => {
+  for (let i = 0; i < 12; i++) {
+    letrero.encenderRectangulo(posicion1, posicion1);
+  }
+  expect(letrero.intensidad(posicion1)).toBe(10);
+});
 
 /*
 Encender (Turn on): Agregar una unidad de intensidad a las luces correspondientes.
