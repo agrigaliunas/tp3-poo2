@@ -29,6 +29,8 @@ test("La seccion del tablero [0,0]-[2,2] debe estar encendido",() =>{
 // 10000 luces
 test("Cuantas hay apagadas letrero", () =>{
     letrero.encenderRectangulo(posicion1,posicion2);
+    letrero.encenderRectangulo(posicion1,posicion2);
+    letrero.apagarRectangulo(posicion1,posicion2);
     expect(letrero.cantidadApagadas()).toBe(9991);
 })
 
