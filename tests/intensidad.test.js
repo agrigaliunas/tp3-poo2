@@ -40,7 +40,7 @@ test("Intensidad minima", () => {
 
 
 test("Intensidad al cambiar estando apagada", () => {
-    letrero.alternar(posicion1);
+    letrero.alternar(posicion1,posicion1);
     expect(letrero.intensidad(posicion1)).toBe(2);
 });
   
