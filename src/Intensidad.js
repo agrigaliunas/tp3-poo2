@@ -1,8 +1,8 @@
 function Intensidad() {
   this.valorIntensidad = 1;
-  
+
   this.encender = function () {
-    if (this.condicion()) {
+    if (this.valorIntensidad < 10) {
       this.valorIntensidad += 1;
     }
   };
@@ -10,11 +10,9 @@ function Intensidad() {
     this.valorIntensidad -= 1;
   };
   this.cambiar = function () {
-    this.valorIintensidad += 2;
-  };
-
-  this.condicion = function () {
-    return this.valorIntensidad < 10;
+    if (this.valorIntensidad < 9) {
+      this.valorIntensidad += 2;
+    }
   };
 }
 

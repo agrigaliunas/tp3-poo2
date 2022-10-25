@@ -38,19 +38,17 @@ test("Intensidad minima", () => {
   expect(letrero.intensidad(posicion1)).toBe(0);
 });
 
-
 test("Intensidad al cambiar estando apagada", () => {
-    letrero.alternar(posicion1,posicion1);
-    expect(letrero.intensidad(posicion1)).toBe(2);
-});
-  
-test("Intensidad al CAMBIAR llegando a maxima", () => {
-    for (let i=0;i<6;i++) {
-        letrero.alternar(posicion1,posicion1);
-    }
-    expect(letrero.intensidad(posicion1)).toBe(10);
+  letrero.alternar(posicion1, posicion1);
+  expect(letrero.intensidad(posicion1)).toBe(2);
 });
 
+test("Intensidad al CAMBIAR llegando a maxima", () => {
+  for (let i = 0; i < 6; i++) {
+    letrero.alternar(posicion1, posicion1);
+  }
+  expect(letrero.intensidad(posicion1)).toBe(10);
+});
 
 /*
 Encender (Turn on): Agregar una unidad de intensidad a las luces correspondientes.
