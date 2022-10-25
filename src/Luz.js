@@ -9,7 +9,7 @@ function Luz() {
       this.estadoActual = new LuzEncendida();
       this.encender();
     } else {
-      this.estadoActual.intenisdad.cambiar();
+      this.estadoActual.intensidad.cambiar();
     }
   };
 
