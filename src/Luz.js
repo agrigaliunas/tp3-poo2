@@ -7,14 +7,14 @@ function Luz() {
   this.cambiarEstado = function () {
     if (this.estadoActual.estado == "Apagada") {
       this.estadoActual = new LuzEncendida();
-    }
-    else{
-      this.estadoActual = new LuzApagada();
+      this.encender();
+    } else {
+      this.estadoActual.cambiar();
     }
   };
 
   this.encender = function () {
-    if (this.estadoActual.estado == 'Apagada'){
+    if (this.estadoActual.estado == "Apagada") {
       this.estadoActual = new LuzEncendida();
     } else {
       this.estadoActual.intensidad.encender();
@@ -22,7 +22,10 @@ function Luz() {
   };
 
   this.apagar = function () {
-    if (this.estadoActual.estado == 'Encendida' && this.estadoActual.estadoIntensidad()!=1){
+    if (
+      this.estadoActual.estado == "Encendida" &&
+      this.estadoActual.estadoIntensidad() != 1
+    ) {
       this.estadoActual.intensidad.apagar();
     } else {
       this.estadoActual = new LuzApagada();
