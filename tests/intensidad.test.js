@@ -26,18 +26,26 @@ test("Intensidad al apagar", () => {
   letrero.encenderRectangulo(posicion1, posicion1);
   letrero.encenderRectangulo(posicion1, posicion1);
   letrero.apagarRectangulo(posicion1, posicion1);
-  
+
   expect(letrero.intensidad(posicion1)).toBe(1);
 });
 
-
 test("Intensidad minima", () => {
-    for (let i = 0; i < 12; i++) {
-        letrero.apagarRectangulo(posicion1, posicion1);
-    }
-    
-    expect(letrero.intensidad(posicion1)).toBe(0);
-  });
+  for (let i = 0; i < 12; i++) {
+    letrero.apagarRectangulo(posicion1, posicion1);
+  }
+
+  expect(letrero.intensidad(posicion1)).toBe(0);
+});
+
+
+test("Intensidad al cambiar estando apagada", () => {
+    letrero.alternar(posicion1);
+    expect(letrero.intensidad(posicion1)).toBe(2);
+});
+  
+
+
 
 /*
 Encender (Turn on): Agregar una unidad de intensidad a las luces correspondientes.
