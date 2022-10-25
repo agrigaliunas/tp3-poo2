@@ -30,6 +30,15 @@ test("Intensidad al apagar", () => {
   expect(letrero.intensidad(posicion1)).toBe(1);
 });
 
+
+test("Intensidad minima", () => {
+    for (let i = 0; i < 12; i++) {
+        letrero.apagarRectangulo(posicion1, posicion1);
+    }
+    
+    expect(letrero.intensidad(posicion1)).toBe(0);
+  });
+
 /*
 Encender (Turn on): Agregar una unidad de intensidad a las luces correspondientes.
 - Apagar (Turn off): Disminuir la intensidad en una unidad de las luces correspondientes.
