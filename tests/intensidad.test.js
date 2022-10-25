@@ -15,7 +15,7 @@ test("Intensidad al encender dos veces", () => {
   expect(letrero.intensidad(posicion1)).toBe(2);
 });
 
-test("Intensidad maxima", () => {
+test("Intensidad al ENCENDER llegando a maxima", () => {
   for (let i = 0; i < 12; i++) {
     letrero.encenderRectangulo(posicion1, posicion1);
   }
@@ -44,7 +44,12 @@ test("Intensidad al cambiar estando apagada", () => {
     expect(letrero.intensidad(posicion1)).toBe(2);
 });
   
-
+test("Intensidad al CAMBIAR llegando a maxima", () => {
+    for (let i=0;i<6;i++) {
+        letrero.alternar(posicion1,posicion1);
+    }
+    expect(letrero.intensidad(posicion1)).toBe(10);
+});
 
 
 /*
