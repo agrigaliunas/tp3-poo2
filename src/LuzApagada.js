@@ -1,6 +1,8 @@
 function LuzApagada() {
   this.estado = "Apagada";
-  this.intensidad = 0;
+  this.estadoIntensidad = function () {
+    return 0;
+  };
 }
 
 module.exports = LuzApagada;

@@ -1,5 +1,6 @@
 function Intensidad() {
   this.valorIntensidad = 1;
+  
   this.encender = function () {
     if (this.condicion()) {
       this.valorIntensidad += 1;

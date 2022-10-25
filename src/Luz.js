@@ -22,7 +22,11 @@ function Luz() {
   };
 
   this.apagar = function () {
-    this.estadoActual = new LuzApagada();
+    if (this.estadoActual.estado == 'Encendida' && this.estadoActual.estadoIntensidad()!=1){
+      this.estadoActual.intensidad.apagar();
+    } else {
+      this.estadoActual = new LuzApagada();
+    }
   };
 }
 

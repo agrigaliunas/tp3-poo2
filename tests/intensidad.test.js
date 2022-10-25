@@ -24,9 +24,10 @@ test("Intensidad maxima", () => {
 
 test("Intensidad al apagar", () => {
   letrero.encenderRectangulo(posicion1, posicion1);
-
+  letrero.encenderRectangulo(posicion1, posicion1);
   letrero.apagarRectangulo(posicion1, posicion1);
-  expect(letrero.intensidad(posicion1)).toBe(0);
+  
+  expect(letrero.intensidad(posicion1)).toBe(1);
 });
 
 /*
